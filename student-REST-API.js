@@ -1,4 +1,3 @@
-// server.js
 const http = require("http");
 
 let students = [];
@@ -128,7 +127,6 @@ const server = http.createServer((req, res) => {
     return res.end(JSON.stringify({ error: "Route not found" }));
   }
 });
-
 // Start server on port 4000
 const PORT = 4000;
 server.listen(PORT, () => {
